@@ -13,7 +13,7 @@ const Signup = () => {
     const [showConfirmPassword, setShowConfirmPassword] = useState(false);
 
     return (
-        <>
+        <section className="login-signup-form">
             <div className="login-main">
                 <div className="login-left">
                     <img src={Image} alt="" />
@@ -111,7 +111,7 @@ const Signup = () => {
                     </div>
                 </div>
             </div>
-        </>
+        </section>
     );
 };
 
