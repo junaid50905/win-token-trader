@@ -41,11 +41,6 @@ const Header = () => {
                             {/* right nav */}
                             <ul className="navbar-nav ms-auto d-flex align-items-center gap-2">
                                 <li className="nav-item">
-                                    <Link class="btn btn-primary rounded-pill px-4">
-                                        Deposit
-                                    </Link>
-                                </li>
-                                <li className="nav-item">
                                     <Link
                                         class="btn btn-dark rounded-pill px-4"
                                         to={"/login"}
