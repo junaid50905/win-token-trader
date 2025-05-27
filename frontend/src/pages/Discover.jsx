@@ -104,7 +104,7 @@ const Discover = () => {
             <div className="card">
                 <div className="card-body">
                     <DataTable
-                        title="Tokens"
+                        title="Discover Tokens"
                         columns={columns}
                         data={data}
                         pagination
