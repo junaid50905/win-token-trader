@@ -179,6 +179,9 @@ form button[type='button'] {
 }
 
 
+.login-bottom-p{
+  font-size: 14px !important;
+}
 
 .login-bottom-p a{
   text-decoration: none;

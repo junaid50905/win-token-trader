@@ -73,7 +73,7 @@ const Login = () => {
                             </form>
                             <p className="login-bottom-p mt-3">
                                 Don't have an account?{" "}
-                                <Link to={"/signup"}>Sign Up</Link>
+                                <Link to={"/signup"}>Login</Link>
                             </p>
                         </div>
                     </div>
