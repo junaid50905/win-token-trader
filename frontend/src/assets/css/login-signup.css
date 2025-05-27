@@ -145,7 +145,7 @@ form button[type='button'] {
 }
 
 .login-center-buttons{
-  margin-top: 40px;
+  margin-top: 10px;
   display: flex;
   flex-direction: column;
   row-gap: 10px;
@@ -178,11 +178,7 @@ form button[type='button'] {
   background-color: #c4c4c457;
 }
 
-.login-bottom-p{
-  text-align: center;
-  font-size: 1rem;
-  padding-bottom: 40px;
-}
+
 
 .login-bottom-p a{
   text-decoration: none;

@@ -5,7 +5,7 @@ import GoogleSvg from "../assets/icons8-google.svg";
 import { FaEye } from "react-icons/fa6";
 import { FaEyeSlash } from "react-icons/fa6";
 import { Link } from "react-router-dom";
-import '../assets/css/login-signup.css'
+import "../assets/css/login-signup.css";
 
 const Login = () => {
     const [showPassword, setShowPassword] = useState(false);
@@ -18,9 +18,6 @@ const Login = () => {
                 </div>
                 <div className="login-right">
                     <div className="login-right-container">
-                        <div className="login-logo">
-                            <img src={Logo} alt="" />
-                        </div>
                         <div className="login-center">
                             <h2>Welcome back!</h2>
                             <p>Please enter your details</p>
@@ -74,12 +71,11 @@ const Login = () => {
                                     </button>
                                 </div>
                             </form>
+                            <p className="login-bottom-p mt-3">
+                                Don't have an account?{" "}
+                                <Link to={"/signup"}>Sign Up</Link>
+                            </p>
                         </div>
-
-                        <p className="login-bottom-p">
-                            Don't have an account?{" "}
-                            <Link to={"/signup"}>Sign Up</Link>
-                        </p>
                     </div>
                 </div>
             </div>

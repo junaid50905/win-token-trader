@@ -5,8 +5,7 @@ import GoogleSvg from "../assets/icons8-google.svg";
 import { FaEye } from "react-icons/fa6";
 import { FaEyeSlash } from "react-icons/fa6";
 import { Link } from "react-router-dom";
-import '../assets/css/login-signup.css'
-
+import "../assets/css/login-signup.css";
 
 const Signup = () => {
     const [showPassword, setShowPassword] = useState(false);
@@ -20,13 +19,12 @@ const Signup = () => {
                 </div>
                 <div className="login-right">
                     <div className="login-right-container">
-                        <div className="login-logo">
-                            <img src={Logo} alt="" />
-                        </div>
                         <div className="login-center">
                             <h2>Sign Up</h2>
                             <p>Please enter your details</p>
-                            <p>Go to home pae <Link to={'/'}>Home</Link></p>
+                            <p>
+                                Go to home pae <Link to={"/"}>Home</Link>
+                            </p>
                             <form>
                                 <input type="name" placeholder="Name" />
 
@@ -57,7 +55,9 @@ const Signup = () => {
                                 <div className="pass-input-div">
                                     <input
                                         type={
-                                            showConfirmPassword ? "text" : "password"
+                                            showConfirmPassword
+                                                ? "text"
+                                                : "password"
                                         }
                                         placeholder="Confirm password"
                                     />
@@ -79,8 +79,8 @@ const Signup = () => {
                                         />
                                     )}
                                 </div>
-                                
-                                <div className="login-center-buttons">
+
+                                <div className="login-center-buttons mt-0">
                                     <button type="button">Sign up</button>
                                     <button type="button">
                                         <img src={GoogleSvg} alt="" />
@@ -88,12 +88,11 @@ const Signup = () => {
                                     </button>
                                 </div>
                             </form>
+                            <p className="login-bottom-p mt-3">
+                                Already have an account?{" "}
+                                <Link to={"/login"}>Login</Link>
+                            </p>
                         </div>
-
-                        <p className="login-bottom-p">
-                            Already have an account?{" "}
-                            <Link to={"/login"}>Login</Link>
-                        </p>
                     </div>
                 </div>
             </div>
