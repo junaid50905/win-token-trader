@@ -1,5 +1,6 @@
 import React from "react";
 import DataTable from "react-data-table-component";
+import { Link } from "react-router-dom";
 
 const columns = [
     {
@@ -61,10 +62,10 @@ const columns = [
     },
     {
         name: "Action",
-        cell: () => (
-            <button className="btn btn-sm btn-primary rounded">
+        cell: (row) => (
+            <Link to={`/discover/${row.id}/token`} className="btn btn-sm btn-primary rounded">
                 Trade
-            </button>
+            </Link>
         ),
     },
 ];
@@ -95,8 +96,6 @@ const data = Array.from({ length: 100 }, (_, i) => {
         ).toFixed(2)}%`,
     };
 });
-
-console.log(data);
 
 const Discover = () => {
     return (

@@ -1,0 +1,59 @@
+.trade-card {
+    background-color: #0f0f0f;
+    border: none;
+    border-radius: 8px;
+}
+
+.custom-tabs .nav-link {
+    flex: 1;
+    text-align: center;
+    background-color: #1c1c1c;
+    color: #aaa;
+    border: none;
+    border-radius: 0;
+    padding: 0.75rem;
+    font-weight: 500;
+}
+
+.custom-tabs .nav-link.active {
+    background-color: #00ffc3;
+    color: #000;
+    font-weight: bold;
+}
+
+.trade-content {
+    border: none;
+    border-radius: 8px;
+}
+
+.buy-btn {
+    background-color: #00ffc3;
+    color: #000;
+    font-weight: bold;
+    padding: 0.75rem;
+    border-radius: 8px;
+    border: none;
+}
+
+.sell-btn {
+    background-color: #ff3b3b;
+    color: #fff;
+    font-weight: bold;
+    padding: 0.75rem;
+    border-radius: 8px;
+    border: none;
+}
+
+.buy_btn:hover {
+    background-color: #005a45;
+    color: white;
+}
+.sell_btn:hover {
+    background-color: rgb(128, 0, 0);
+    color: white;
+}
+
+/* remove bootstrap css */
+.nav-tabs {
+    border-bottom: none !important;
+}
