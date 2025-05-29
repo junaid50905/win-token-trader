@@ -2,10 +2,54 @@ import React from "react";
 import DataTable from "react-data-table-component";
 import { Link } from "react-router-dom";
 
+
+const customStyles = {
+    table: {
+        style: {
+            backgroundColor: '#191A21',
+        },
+    },
+    header: {
+        style: {
+            backgroundColor: '#57606f',
+            color: '#fff',
+            fontSize: '22px',
+            padding: '16px',
+        },
+    },
+    headRow: {
+        style: {
+            backgroundColor: '#101114',
+            color: 'white',
+        },
+    },
+    rows: {
+        style: {
+            backgroundColor: '#00000',
+            color: '#fff',
+        },
+        highlightOnHoverStyle: {
+            backgroundColor: '#2C3A47',
+            color: '#fff',
+            cursor: 'pointer',
+        },
+    },
+     pagination: {
+        style: {
+            backgroundColor: '#57606f',
+            color: '#fff',
+            borderTop: '1px solid #fff',
+            padding: '12px',
+        },
+    },
+};
+
+
+
 const columns = [
     {
         name: "Token",
-        selector: (row) => row.token_name,
+        selector: (row) => <h5 className="text-white">{row.token_name}</h5>,
         sortable: true,
     },
     {
@@ -99,15 +143,17 @@ const data = Array.from({ length: 100 }, (_, i) => {
 
 const Discover = () => {
     return (
-        <div className="container mt-4">
-            <div className="card">
-                <div className="card-body">
+        <div className="mt-4">
+            <div className="container">
+                <div className="tokens-table">
                     <DataTable
                         title="Discover Tokens"
                         columns={columns}
                         data={data}
                         pagination
                         highlightOnHover
+                        customStyles={customStyles}
+
                     />
                 </div>
             </div>

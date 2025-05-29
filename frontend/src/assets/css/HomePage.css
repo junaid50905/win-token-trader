@@ -1,0 +1,56 @@
+
+
+.gradient-bg {
+    background: linear-gradient(135deg, #020207, #070e20, #131d53);
+}
+
+.hero {
+    text-align: center;
+    padding: 120px 20px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+.hero p {
+    color: #aaa;
+}
+
+.btn-primary {
+    background-color: #3d56f0;
+    border: none;
+}
+
+.features-section,
+.rewards-section,
+.architecture-section,
+.faq-section {
+    padding: 80px 20px;
+}
+
+.section-title {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.feature-card {
+    background-color: #111;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.faq-section .accordion-button {
+    background-color: #111;
+    color: #fff;
+}
+
+.footer {
+    text-align: center;
+    padding: 40px 20px;
+    background: #0a0a0a;
+}

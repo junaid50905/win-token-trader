@@ -10,6 +10,8 @@ import SignupPage from "./pages/Signup";
 import Discover from "./pages/Discover";
 import TokenDetails from "./pages/TokenDetails";
 
+import './App.css'
+
 function App() {
     return (
         <Router>
