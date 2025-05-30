@@ -1,4 +1,5 @@
 .card{
-  background-color: #191A21;
+  background-color: transparent !important;
   color: white;
+  border: 1px solid #2d3436;
 }

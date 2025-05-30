@@ -1,57 +1,93 @@
 import React from "react";
 import DataTable from "react-data-table-component";
-import { Link, useNavigate  } from "react-router-dom";
-
+import { Link, useNavigate } from "react-router-dom";
+import Bitcoin from "../assets/images/bitcoin.png";
 
 const customStyles = {
     table: {
         style: {
-            backgroundColor: '#191A21',
+            backgroundColor: "transparent",
+            border: "1px solid #2d3436 !important",
+            borderRadius: "5px",
+            padding: "2px",
+            marginBottom: "10px",
         },
     },
     header: {
         style: {
-            backgroundColor: '#57606f',
-            color: '#fff',
-            fontSize: '22px',
-            padding: '16px',
+            backgroundColor: "#57606f",
+            color: "#fff",
+            fontSize: "22px",
+            padding: "16px",
         },
     },
     headRow: {
         style: {
-            backgroundColor: '#101114',
-            color: 'white',
+            backgroundColor: "#101114",
+            color: "#696969",
         },
     },
     rows: {
         style: {
-            backgroundColor: '#00000',
-            color: '#fff',
+            backgroundColor: "#00000",
+            color: "#fff",
+            padding: "10px 0",
         },
         highlightOnHoverStyle: {
-            backgroundColor: '#2C3A47',
-            color: '#fff',
-            cursor: 'pointer',
+            backgroundColor: "#001208",
+            color: "#fff",
+            border: "none",
+            cursor: "pointer",
+            outline: "none",
         },
     },
-     pagination: {
+    pagination: {
         style: {
-            backgroundColor: '#57606f',
-            color: '#fff',
-            borderTop: '1px solid #fff',
-            padding: '12px',
+            backgroundColor: "#57606f",
+            color: "#fff",
+            borderTop: "1px solid #fff",
+            padding: "12px",
         },
     },
 };
 
-
-
 const columns = [
     {
         name: "Token",
-        selector: (row) => <h5 className="text-white">{row.token_name}</h5>,
+        selector: (row) => (
+            <div
+                className="d-flex align-items-center gap-2"
+                style={{ minWidth: "220px", flexShrink: 0 }}
+            >
+                <div
+                    style={{
+                        width: "40px",
+                        height: "40px",
+                        flexShrink: 0,
+                    }}
+                >
+                    <img
+                        src="https://pbs.twimg.com/media/GrZTIqmXQAA2OpI.jpg"
+                        alt="token"
+                        style={{
+                            width: "100%",
+                            height: "100%",
+                            objectFit: "cover",
+                            borderRadius: "10%",
+                        }}
+                    />
+                </div>
+                <div className="token_title">
+                    <h5 className="text-white mb-0">{row.token_name}</h5>
+                    <p className="text-success fw-bold mb-0">1y</p>
+                </div>
+            </div>
+        ),
         sortable: true,
+        grow: 2, // Allows the column to grow a bit more if needed
+        wrap: true, // Allows text to wrap if needed
     },
+
     {
         name: "Price",
         selector: (row) => row.price,
@@ -107,7 +143,10 @@ const columns = [
     {
         name: "Action",
         cell: (row) => (
-            <Link to={`/discover/${row.id}/token`} className="btn btn-sm btn-primary rounded">
+            <Link
+                to={`/discover/${row.id}/token`}
+                className="btn btn-sm btn-success rounded"
+            >
                 Trade
             </Link>
         ),
@@ -142,23 +181,28 @@ const data = Array.from({ length: 100 }, (_, i) => {
 });
 
 const Discover = () => {
-        const navigate = useNavigate(); // ← use hook
-
+    const navigate = useNavigate(); // ← use hook
 
     return (
         <div className="mt-4">
-            <div className="container">
-                <div className="tokens-table">
-                    <DataTable
-                        title="Discover Tokens"
-                        columns={columns}
-                        data={data}
-                        pagination
-                        highlightOnHover
-                        customStyles={customStyles}
-                        onRowClicked={(row) => navigate(`/discover/${row.id}/token`)}
-                        paginationPerPage={15} 
-                    />
+            <div className="container-fluid">
+                <div className="row">
+                    <div className="col-md-10 offset-md-1">
+                        <div className="tokens-table m-5">
+                            <h4 className="text-white">Discover Tokens</h4>
+                            <DataTable
+                                columns={columns}
+                                data={data}
+                                pagination
+                                highlightOnHover
+                                customStyles={customStyles}
+                                onRowClicked={(row) =>
+                                    navigate(`/discover/${row.id}/token`)
+                                }
+                                paginationPerPage={15}
+                            />
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

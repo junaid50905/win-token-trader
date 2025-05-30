@@ -2,7 +2,6 @@ body {
     background-color: rgb(8, 8, 8);
 }
 
-
 .wrapper {
     display: flex;
     flex-direction: column;
@@ -11,4 +10,11 @@ body {
 
 .main-content {
     flex: 1;
+}
+
+/* Discover */
+
+.csJWra {
+    background-color: #6b8577 !important;
+    border-top: none !important;
 }
