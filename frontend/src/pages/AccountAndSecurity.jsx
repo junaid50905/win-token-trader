@@ -7,9 +7,9 @@ const AccountAndSecurity = () => {
             <section>
                 <div className="container-fluid py-5">
                     <div className="row">
-                        <div className="col-md-3 col-sm-4 col-4 border-end">
+                        <div className="col-md-3 col-sm-4 col-12">
                             <div
-                                className="nav flex-column nav-pills"
+                                className="nav flex-sm-column nav-pills mb-sm-0 mb-3"
                                 id="v-pills-tab"
                                 role="tablist"
                             >
@@ -66,7 +66,7 @@ const AccountAndSecurity = () => {
                             </div>
                         </div>
 
-                        <div className="col-md-9 col-sm-8 col-8">
+                        <div className="col-md-9 col-sm-8 col-12">
                             <div
                                 className="tab-content"
                                 id="v-pills-tabContent"
@@ -102,7 +102,7 @@ const AccountAndSecurity = () => {
                                 >
                                     Team settings...
                                 </div>
-                                
+
                                 <div
                                     className="tab-pane fade section-box"
                                     id="plans"
