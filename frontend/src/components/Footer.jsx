@@ -9,7 +9,7 @@ const Footer = () => {
         <footer className="bg-dark mt-5 py-2">
             <div className="container-fluid">
                 <div className="row align-items-center">
-                    <div className="col-sm-10">
+                    <div className="col-sm-8 col-12">
                         <div className="d-flex gap-3 align-items-center">
                             <div className="logo">
                                 <Link to={"/"}>
@@ -22,15 +22,15 @@ const Footer = () => {
                                 </Link>
                             </div>
                             <div className="copyright">
-                                <h3 className="text-secondary">
+                                <h6 className="text-secondary">
                                     © 2025 WinToken Trader. All rights reserved.
-                                </h3>
+                                </h6>
                             </div>
                         </div>
                     </div>
-                    <div className="col-sm-2">
+                    <div className="col-sm-4 col-12">
                         <div className="contact d-flex align-items-center gap-3">
-                            <h4 className="text-white">Contact Us</h4>
+                            <h6 className="text-white">Contact Us</h6>
                             <div className="icons d-flex align-items-center">
                                 <h3>
                                     <TiSocialFacebook className="text-info" style={{cursor: 'pointer'}}/>
