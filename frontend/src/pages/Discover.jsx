@@ -57,7 +57,7 @@ const columns = [
         selector: (row) => (
             <div
                 className="d-flex align-items-center gap-2"
-                style={{ minWidth: "220px", flexShrink: 0 }}
+                style={{ minWidth: "160px", flexShrink: 0 }}
             >
                 <div
                     style={{
@@ -181,28 +181,24 @@ const data = Array.from({ length: 100 }, (_, i) => {
 });
 
 const Discover = () => {
-    const navigate = useNavigate(); // ← use hook
+    const navigate = useNavigate();
 
     return (
         <div className="mt-4">
-            <div className="container-fluid">
-                <div className="row">
-                    <div className="col-md-10 offset-md-1">
-                        <div className="tokens-table m-5">
-                            <h4 className="text-white">Discover Tokens</h4>
-                            <DataTable
-                                columns={columns}
-                                data={data}
-                                pagination
-                                highlightOnHover
-                                customStyles={customStyles}
-                                onRowClicked={(row) =>
-                                    navigate(`/discover/${row.id}/token`)
-                                }
-                                paginationPerPage={15}
-                            />
-                        </div>
-                    </div>
+            <div className="container-xl">
+                <div className="tokens-table m-5">
+                    <h4 className="text-white">Discover Tokens</h4>
+                    <DataTable
+                        columns={columns}
+                        data={data}
+                        pagination
+                        highlightOnHover
+                        customStyles={customStyles}
+                        onRowClicked={(row) =>
+                            navigate(`/discover/${row.id}/token`)
+                        }
+                        paginationPerPage={15}
+                    />
                 </div>
             </div>
         </div>
