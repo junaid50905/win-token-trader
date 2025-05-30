@@ -1,5 +1,5 @@
 import React from "react";
-import '../assets/css/account-and-security.css'
+import "../assets/css/account-and-security.css";
 
 const AccountAndSecurity = () => {
     return (
@@ -7,7 +7,7 @@ const AccountAndSecurity = () => {
             <section>
                 <div className="container-fluid py-5">
                     <div className="row">
-                        <div className="col-md-3">
+                        <div className="col-md-3 col-sm-4 col-4 border-end">
                             <div
                                 className="nav flex-column nav-pills"
                                 id="v-pills-tab"
@@ -106,7 +106,7 @@ const AccountAndSecurity = () => {
                             </div>
                         </div>
 
-                        <div className="col-md-9">
+                        <div className="col-md-9 col-sm-8 col-8">
                             <div
                                 className="tab-content"
                                 id="v-pills-tabContent"

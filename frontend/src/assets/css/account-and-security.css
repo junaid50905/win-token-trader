@@ -5,6 +5,7 @@
 .section-box{
   background-color: transparent !important;
   color: white;
+  border: 1px solid white;
 }
 .nav-link.active {
     background-color: #e9ecef;
