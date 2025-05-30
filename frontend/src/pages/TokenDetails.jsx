@@ -294,16 +294,16 @@ const TokenDetails = () => {
         <>
             <section className="mt-4 container-fluid">
                 <div className="row">
-                    <div className="col-md-9">
-                        <div className="card">
+                    <div className="col-xl-8 col-lg-7 col-md-12 col-sm-12 col-12">
+                        <div className="card my-2">
                             <div className="card-body">
                                 <div className="row">
-                                    <div className="col-md-2">
+                                    <div className="col-md-3">
                                         <h2>Bitcoin {id}</h2>
                                     </div>
                                     <div className="col-md-10">
                                         <div className="row">
-                                            <div className="col-md-1 col-sm-2 col-3">
+                                            <div className="col-md-2 col-sm-2 col-3">
                                                 <div>
                                                     <p className="m-0">
                                                         <small>Price</small>
@@ -314,7 +314,7 @@ const TokenDetails = () => {
                                                 </div>
                                             </div>
 
-                                            <div className="col-md-1 col-sm-2 col-3">
+                                            <div className="col-md-2 col-sm-2 col-3">
                                                 <div>
                                                     <p className="m-0">
                                                         <small>Liquidity</small>
@@ -323,7 +323,7 @@ const TokenDetails = () => {
                                                 </div>
                                             </div>
 
-                                            <div className="col-md-1 col-sm-2 col-3">
+                                            <div className="col-md-2 col-sm-2 col-3">
                                                 <div>
                                                     <p className="m-0">
                                                         <small>Supply</small>
@@ -343,8 +343,8 @@ const TokenDetails = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-md-3">
-                        <div className="card">
+                    <div className="col-xl-4 col-lg-5 col-md-12 col-sm-12 col-12">
+                        <div className="card my-2">
                             <div className="card-body">
                                 <BuySellTab />
                             </div>
