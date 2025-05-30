@@ -12,7 +12,7 @@ const Signup = () => {
     const [showConfirmPassword, setShowConfirmPassword] = useState(false);
 
     return (
-        <section className="login-signup-form">
+        <section className="login-signup-form bg-white">
             <div className="login-main">
                 <div className="login-left">
                     <img src={Image} alt="" />
