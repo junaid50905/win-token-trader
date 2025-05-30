@@ -3,6 +3,8 @@ import { useParams } from "react-router-dom";
 import ReactApexChart from "react-apexcharts";
 import BuySellTab from "../components/BuySellTab/BuySellTab";
 
+import "./../assets/css/token_details.css";
+
 const TokenDetails = () => {
     const { id } = useParams();
 
@@ -257,17 +259,32 @@ const TokenDetails = () => {
             chart: {
                 type: "candlestick",
                 height: 350,
-            },
-            title: {
-                text: "",
-                align: "left",
+                toolbar: {
+                    show: true,
+                },
             },
             xaxis: {
                 type: "datetime",
+                labels: {
+                    style: {
+                        colors: "#ffffff",
+                    },
+                },
             },
             yaxis: {
-                tooltip: {
-                    enabled: true,
+                labels: {
+                    style: {
+                        colors: "#ffffff",
+                    },
+                },
+            },
+            tooltip: {
+                theme: "dark",
+            },
+            title: {
+                text: "",
+                style: {
+                    color: "#ffffff",
                 },
             },
         },
@@ -286,7 +303,7 @@ const TokenDetails = () => {
                                     </div>
                                     <div className="col-md-10">
                                         <div className="row">
-                                            <div className="col-md-1">
+                                            <div className="col-md-1 col-sm-2 col-3">
                                                 <div>
                                                     <p className="m-0">
                                                         <small>Price</small>
@@ -297,7 +314,7 @@ const TokenDetails = () => {
                                                 </div>
                                             </div>
 
-                                            <div className="col-md-1">
+                                            <div className="col-md-1 col-sm-2 col-3">
                                                 <div>
                                                     <p className="m-0">
                                                         <small>Liquidity</small>
@@ -306,7 +323,7 @@ const TokenDetails = () => {
                                                 </div>
                                             </div>
 
-                                            <div className="col-md-1">
+                                            <div className="col-md-1 col-sm-2 col-3">
                                                 <div>
                                                     <p className="m-0">
                                                         <small>Supply</small>
@@ -329,7 +346,7 @@ const TokenDetails = () => {
                     <div className="col-md-3">
                         <div className="card">
                             <div className="card-body">
-                              <BuySellTab/>
+                                <BuySellTab />
                             </div>
                         </div>
                     </div>

@@ -1,0 +1,30 @@
+.nav-link {
+    color: #dfe0e0;
+    text-align: left;
+}
+.section-box{
+  background-color: transparent !important;
+  color: white;
+}
+.nav-link.active {
+    background-color: #e9ecef;
+    font-weight: 500;
+}
+.form-control:disabled {
+    background-color: #f1f3f5;
+}
+.form-label {
+    font-weight: 500;
+}
+.section-box {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.1);
+}
+.title-bar {
+    background-color: #f1f3f5;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+}

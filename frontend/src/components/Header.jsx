@@ -1,6 +1,8 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import Logo from "../assets/logo.svg";
+import './../assets/css/Header.css'
+
 
 const Header = () => {
     return (
@@ -73,6 +75,43 @@ const Header = () => {
                                 </Link>
                             </li>
                         </ul>
+                    </div>
+
+                    {/* user profile */}
+                    <div className="ms-2">
+                        <div className="dropdown">
+                            <button
+                                className="btn p-0 border-0 bg-transparent dropdown-toggle"
+                                type="button"
+                                id="profileDropdown"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                            >
+                                <img
+                                    src="https://plus.unsplash.com/premium_photo-1689568126014-06fea9d5d341?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cHJvZmlsZXxlbnwwfHwwfHx8MA%3D%3D"
+                                    alt="Profile"
+                                    className="rounded-circle"
+                                    height="40"
+                                    width="40"
+                                />
+                            </button>
+
+                            <ul
+                                className="dropdown-menu dropdown-menu-end"
+                                aria-labelledby="profileDropdown"
+                            >
+                                <li>
+                                    <Link to={'/account-and-security'} className="dropdown-item" href="#">
+                                        Account and Security
+                                    </Link>
+                                </li>
+                                <li className="border-top">
+                                    <a className="dropdown-item text-danger fw-bold" href="#">
+                                        Logout
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </nav>

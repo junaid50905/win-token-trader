@@ -13,12 +13,14 @@
     border-radius: 0;
     padding: 0.75rem;
     font-weight: 500;
+    border: 1px solid white;
 }
 
 .custom-tabs .nav-link.active {
     background-color: #00ffc3;
     color: #000;
     font-weight: bold;
+    border: none;
 }
 
 .trade-content {
