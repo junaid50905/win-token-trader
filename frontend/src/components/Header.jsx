@@ -1,8 +1,7 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
-import Logo from "../assets/logo.svg";
-import './../assets/css/Header.css'
-
+import Logo from "../assets/logo.png";
+import "./../assets/css/Header.css";
 
 const Header = () => {
     return (
@@ -24,7 +23,12 @@ const Header = () => {
 
                     {/* Center: Logo */}
                     <NavLink className="navbar-brand mx-auto" to="/">
-                        <img src={Logo} alt="Axiom Logo" height="40" />
+                        <img
+                            src={Logo}
+                            alt="Axiom Logo"
+                            height="70"
+                            width={"70"}
+                        />
                     </NavLink>
 
                     {/* Right: Login & Signup */}
@@ -101,12 +105,19 @@ const Header = () => {
                                 aria-labelledby="profileDropdown"
                             >
                                 <li>
-                                    <Link to={'/account-and-security'} className="dropdown-item" href="#">
+                                    <Link
+                                        to={"/account-and-security"}
+                                        className="dropdown-item"
+                                        href="#"
+                                    >
                                         Account and Security
                                     </Link>
                                 </li>
                                 <li className="border-top">
-                                    <a className="dropdown-item text-danger fw-bold" href="#">
+                                    <a
+                                        className="dropdown-item text-danger fw-bold"
+                                        href="#"
+                                    >
                                         Logout
                                     </a>
                                 </li>

@@ -156,7 +156,8 @@ const Discover = () => {
                         pagination
                         highlightOnHover
                         customStyles={customStyles}
-                        onRowClicked={(row) => navigate(`/discover/${row.id}/token`)} // ← click handler
+                        onRowClicked={(row) => navigate(`/discover/${row.id}/token`)}
+                        paginationPerPage={15} 
                     />
                 </div>
             </div>
