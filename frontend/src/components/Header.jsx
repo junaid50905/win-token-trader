@@ -49,11 +49,11 @@ const Header = () => {
                         id="navbarSupportedContent"
                     >
                         <ul className="navbar-nav me-auto mb-2 ms-sm-5 mb-lg-0">
-                            <li className="nav-item">
+                            {/* <li className="nav-item">
                                 <NavLink className="nav-link" to="/discover">
                                     Discover
                                 </NavLink>
-                            </li>
+                            </li> */}
                         </ul>
 
                         {/* Right nav for large screens */}

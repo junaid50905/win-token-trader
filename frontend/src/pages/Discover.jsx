@@ -1,6 +1,6 @@
 import React from "react";
 import DataTable from "react-data-table-component";
-import { Link } from "react-router-dom";
+import { Link, useNavigate  } from "react-router-dom";
 
 
 const customStyles = {
@@ -142,6 +142,9 @@ const data = Array.from({ length: 100 }, (_, i) => {
 });
 
 const Discover = () => {
+        const navigate = useNavigate(); // ← use hook
+
+
     return (
         <div className="mt-4">
             <div className="container">
@@ -153,7 +156,7 @@ const Discover = () => {
                         pagination
                         highlightOnHover
                         customStyles={customStyles}
-
+                        onRowClicked={(row) => navigate(`/discover/${row.id}/token`)} // ← click handler
                     />
                 </div>
             </div>

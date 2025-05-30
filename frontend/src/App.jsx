@@ -18,8 +18,8 @@ function App() {
         <Router>
             <Routes>
                 <Route path="/" element={<MainLayout />}>
-                    <Route index element={<HomePage />} />
-                    <Route path="/discover" element={<Discover />} />
+                    <Route index element={<Discover />} />
+                    {/* <Route path="/discover" element={<Discover />} /> */}
                     <Route
                         path="/discover/:id/token"
                         element={<TokenDetails />}
