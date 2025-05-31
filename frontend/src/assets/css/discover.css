@@ -1,19 +1,19 @@
 /* Ensure full-width layout under 1120px */
 .table-wrapper {
-  padding: 0 1rem;
-  width: 100%;
+    padding: 0 1rem;
+    width: 100%;
 }
 
 @media (max-width: 1120px) {
-  .tokens-table {
-    margin: 0 !important;
-    width: 100%;
-  }
+    .tokens-table {
+        margin: 0 !important;
+        width: 100%;
+    }
 }
 
-
 @media (max-width: 576px) {
-  .tokens-table {
-    margin: 0 -20px !important;
-  }
+    .tokens-table {
+        margin: 0 -20px !important;
+        width: 110%;
+    }
 }
