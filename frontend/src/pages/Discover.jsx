@@ -186,7 +186,7 @@ const Discover = () => {
     return (
         <section id="discover">
             <div className="mt-4">
-                <div className="container-xl container">
+                <div className="container-xl container-fluid">
                     <div className="tokens-table m-5">
                         <h4 className="text-white">Discover Tokens</h4>
                         <DataTable
