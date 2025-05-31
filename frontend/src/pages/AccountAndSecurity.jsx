@@ -76,7 +76,27 @@ const AccountAndSecurity = () => {
                                     id="general"
                                     role="tabpanel"
                                 >
-                                    General .....
+                                    <form action="">
+                                        <div className="input-group-sm mb-3">
+                                            <label htmlFor="name" className="mb-2">Name</label>
+                                            <input
+                                                id="name"
+                                                type="text"
+                                                className="form-control"
+                                                value={'Junaid Hossain'}
+                                            />
+                                        </div>
+                                        <div className="input-group-sm mb-3">
+                                            <label htmlFor="email" className="mb-2">Email</label>
+                                            <input
+                                                id="email"
+                                                type="email"
+                                                className="form-control"
+                                                value={'junaidhossain50905@gmail.com'}
+                                                disabled
+                                            />
+                                        </div>
+                                    </form>
                                 </div>
 
                                 <div

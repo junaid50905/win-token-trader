@@ -30,3 +30,19 @@
     margin-bottom: 1.5rem;
 }
 
+input {
+    background-color: rgb(31, 31, 31) !important;
+    border: none !important;
+    color: rgb(160, 160, 160) !important;
+}
+
+input:focus {
+    background-color: rgb(31, 31, 31);
+    outline: none !important;
+    box-shadow: none !important;
+    border-color: none !important;
+    color: rgb(160, 160, 160);
+}
+label {
+    color: rgb(160, 160, 160);
+}
