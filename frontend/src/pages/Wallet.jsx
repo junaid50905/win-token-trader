@@ -29,7 +29,7 @@ const Wallet = () => {
                     </div>
 
                     <div className="row latest_deposit_history">
-                        <div className="col-md-8">
+                        <div className="col-md-8 my-1">
                             <div className="left">
                                 <div className="row">
                                     <div className="col-md-3 col-sm-6 col-6">
@@ -79,7 +79,7 @@ const Wallet = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-md-4">
+                        <div className="col-md-4 my-1">
                             <div className="right bg-white rounded">
                                 <div className="card">
                                     <div className="card-body">
