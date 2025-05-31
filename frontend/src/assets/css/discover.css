@@ -10,3 +10,10 @@
     width: 100%;
   }
 }
+
+
+@media (max-width: 576px) {
+  .tokens-table {
+    margin: 0 -20px !important;
+  }
+}
