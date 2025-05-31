@@ -1,9 +1,6 @@
 @media (max-width: 1120px) {
-  section#discover_page .container-fluid {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-    margin-left: -35px !important;
-    margin-right: 0 !important;
+  section#discover .container {
+    margin-left: -20px !important;
     width: 100% !important;
     max-width: 100% !important;
   }

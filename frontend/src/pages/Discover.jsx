@@ -184,9 +184,9 @@ const Discover = () => {
     const navigate = useNavigate();
 
     return (
-        <section id="discover_page">
+        <section id="discover">
             <div className="mt-4">
-                <div className="container-fluid">
+                <div className="container-xl container">
                     <div className="tokens-table m-5">
                         <h4 className="text-white">Discover Tokens</h4>
                         <DataTable
