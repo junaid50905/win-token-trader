@@ -22,3 +22,12 @@
 .four{
   background-color: #e55039;
 }
+
+.merchant_logo{
+  height: 60px;
+  width: 60px;
+}
+
+.table tbody tr:last-child td {
+  border-bottom: none;
+}
