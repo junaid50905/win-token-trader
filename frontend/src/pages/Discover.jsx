@@ -1,7 +1,7 @@
 import React from "react";
 import DataTable from "react-data-table-component";
 import { Link, useNavigate } from "react-router-dom";
-import Bitcoin from "../assets/images/bitcoin.png";
+import "../assets/css/discover.css";
 
 const customStyles = {
     table: {
@@ -184,24 +184,26 @@ const Discover = () => {
     const navigate = useNavigate();
 
     return (
-        <div className="mt-4">
-            <div className="container-fluid">
-                <div className="tokens-table m-5">
-                    <h4 className="text-white">Discover Tokens</h4>
-                    <DataTable
-                        columns={columns}
-                        data={data}
-                        pagination
-                        highlightOnHover
-                        customStyles={customStyles}
-                        onRowClicked={(row) =>
-                            navigate(`/discover/${row.id}/token`)
-                        }
-                        paginationPerPage={15}
-                    />
+        <section id="discover_page">
+            <div className="mt-4">
+                <div className="container-fluid">
+                    <div className="tokens-table m-5">
+                        <h4 className="text-white">Discover Tokens</h4>
+                        <DataTable
+                            columns={columns}
+                            data={data}
+                            pagination
+                            highlightOnHover
+                            customStyles={customStyles}
+                            onRowClicked={(row) =>
+                                navigate(`/discover/${row.id}/token`)
+                            }
+                            paginationPerPage={15}
+                        />
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 
