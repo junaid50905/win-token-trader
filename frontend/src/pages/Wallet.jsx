@@ -35,7 +35,7 @@ const Wallet = () => {
                                     <div className="col-md-3 col-sm-6 col-6">
                                         <div className="d-flex justify-content-between text-white one bg-info rounded p-2 my-1">
                                             <div>
-                                                <h4 className="m-0">৳1,200</h4>
+                                                <h4 className="m-0">৳1.7</h4>
                                                 <p>Total Mining</p>
                                             </div>
                                             <span>
@@ -57,7 +57,7 @@ const Wallet = () => {
                                     <div className="col-md-3 col-sm-6 col-6">
                                         <div className="d-flex justify-content-between text-white three rounded p-2 my-1">
                                             <div>
-                                                <h4 className="m-0">৳1,2K</h4>
+                                                <h4 className="m-0">৳1.2K</h4>
                                                 <p>Earnings</p>
                                             </div>
                                             <span>

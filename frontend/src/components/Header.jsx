@@ -34,13 +34,13 @@ const Header = () => {
                     {/* Right: Login & Signup */}
                     <div className="d-flex d-lg-none gap-2">
                         <Link
-                            className="btn btn-dark btn-sm rounded-pill px-3"
+                            className="btn btn-dark btn-sm rounded-pill px-3 d-none"
                             to="/login"
                         >
                             Login
                         </Link>
                         <Link
-                            className="btn btn-primary btn-sm rounded-pill px-3"
+                            className="btn btn-primary btn-sm rounded-pill px-3 d-none"
                             to="/signup"
                         >
                             Signup
@@ -53,16 +53,16 @@ const Header = () => {
                         id="navbarSupportedContent"
                     >
                         <ul className="navbar-nav me-auto mb-2 ms-sm-5 mb-lg-0">
-                            {/* <li className="nav-item">
-                                <NavLink className="nav-link" to="/discover">
+                            <li className="nav-item">
+                                <NavLink className="nav-link" to="/">
                                     Discover
                                 </NavLink>
-                            </li> */}
+                            </li>
                         </ul>
 
                         {/* Right nav for large screens */}
                         <ul className="navbar-nav ms-auto d-none d-lg-flex align-items-center gap-2">
-                            <li className="nav-item">
+                            <li className="nav-item d-none">
                                 <Link
                                     className="btn btn-dark rounded-pill px-4"
                                     to="/login"
@@ -70,7 +70,7 @@ const Header = () => {
                                     Login
                                 </Link>
                             </li>
-                            <li className="nav-item">
+                            <li className="nav-item d-none">
                                 <Link
                                     className="btn btn-primary rounded-pill px-4"
                                     to="/signup"
