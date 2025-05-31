@@ -7,7 +7,7 @@ const BuySellTab = () => {
         <>
             <nav>
                 <div
-                    className="nav nav-tabs custom-tabs mb-3"
+                    className="nav nav-tabs custom-tabs mb-3 px-3"
                     id="nav-tab"
                     role="tablist"
                 >
@@ -51,7 +51,7 @@ const BuySellTab = () => {
                             {/* amount */}
                             <div className="input-group">
                                 <span
-                                    className="input-group-text"
+                                    className="input-group-text amount_label"
                                     id="inputGroup-sizing-default"
                                 >
                                     Amount
@@ -59,15 +59,15 @@ const BuySellTab = () => {
 
                                 <input
                                     type="number"
-                                    className="form-control"
+                                    className="form-control amount"
                                     aria-label="Sizing example input"
                                     aria-describedby="inputGroup-sizing-default"
                                 />
                             </div>
 
                             {/* time frame */}
-                            <div className="d-flex align-items-center gap-4 mt-3 border rounded">
-                                <div className="pt-2 ps-1 border-end">
+                            <div className="d-flex align-items-center gap-4 mt-3 rounded timeframe">
+                                <div className="pt-3 ps-3">
                                     <p>Timeframe: </p>
                                 </div>
                                 <div className="form-check">
@@ -131,7 +131,9 @@ const BuySellTab = () => {
                     <div className="text-center">
                         <h5>Sell Fartcoin</h5>
                         <p>Enter your amount and execute the trade.</p>
-                        <button className="btn sell-btn w-100 sell_btn">Sell Now</button>
+                        <button className="btn sell-btn w-100 sell_btn">
+                            Sell Now
+                        </button>
                     </div>
                 </div>
             </div>

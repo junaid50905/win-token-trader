@@ -1,5 +1,43 @@
-.card{
-  background-color: transparent !important;
-  color: white;
-  border: 1px solid #2d3436;
+.card {
+    background-color: transparent !important;
+    color: white;
+    border: 1px solid #2d3436;
+}
+
+input.amount {
+    background-color: rgb(31, 31, 31);
+    border: none;
+    color: rgb(160, 160, 160);
+}
+input.amount:focus {
+    background-color: rgb(31, 31, 31);
+    outline: none !important;
+    box-shadow: none !important;
+    border-color: #ced4da !important;
+    color: rgb(160, 160, 160);
+}
+.amount_label {
+    background-color: rgb(31, 31, 31);
+    border: none;
+    color: rgb(160, 160, 160);
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* For Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+.timeframe {
+    background-color: rgb(31, 31, 31);
+    color: rgb(160, 160, 160);
+}
+
+#time_frame1{
+  accent-color: red !important;
 }

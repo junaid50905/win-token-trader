@@ -185,7 +185,7 @@ const Discover = () => {
 
     return (
         <div className="mt-4">
-            <div className="container-xl">
+            <div className="container-fluid">
                 <div className="tokens-table m-5">
                     <h4 className="text-white">Discover Tokens</h4>
                     <DataTable
