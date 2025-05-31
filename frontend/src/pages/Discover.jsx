@@ -57,7 +57,7 @@ const columns = [
         selector: (row) => (
             <div
                 className="d-flex align-items-center gap-2"
-                style={{ minWidth: "160px", flexShrink: 0 }}
+                style={{ minWidth: "120px", flexShrink: 0 }}
             >
                 <div
                     style={{
@@ -78,7 +78,9 @@ const columns = [
                     />
                 </div>
                 <div className="token_title">
-                    <h5 className="text-white mb-0">{row.token_name}</h5>
+                    <p className="text-white mb-0 fs-6 fs-md-5 fs-lg-4">
+                        {row.token_name}
+                    </p>
                     <p className="text-success fw-bold mb-0">1y</p>
                 </div>
             </div>
@@ -186,20 +188,22 @@ const Discover = () => {
     return (
         <section id="discover">
             <div className="mt-4">
-                <div className="container-xl container-fluid">
-                    <div className="tokens-table m-5">
-                        <h4 className="text-white">Discover Tokens</h4>
-                        <DataTable
-                            columns={columns}
-                            data={data}
-                            pagination
-                            highlightOnHover
-                            customStyles={customStyles}
-                            onRowClicked={(row) =>
-                                navigate(`/discover/${row.id}/token`)
-                            }
-                            paginationPerPage={15}
-                        />
+                <div className="table-wrapper">
+                    <div className="container-lg">
+                        <div className="tokens-table">
+                            <h4 className="text-white">Discover Tokens</h4>
+                            <DataTable
+                                columns={columns}
+                                data={data}
+                                pagination
+                                highlightOnHover
+                                customStyles={customStyles}
+                                onRowClicked={(row) =>
+                                    navigate(`/discover/${row.id}/token`)
+                                }
+                                paginationPerPage={15}
+                            />
+                        </div>
                     </div>
                 </div>
             </div>
