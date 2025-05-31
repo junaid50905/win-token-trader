@@ -37,6 +37,7 @@ const Header = () => {
                         >
                             Signup
                         </Link>
+                        <button className="btn btn-primary rounded-pill">Deposit</button>
                         <div className="ms-2">
                             <div className="dropdown">
                                 <button

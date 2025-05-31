@@ -1,4 +1,3 @@
-
 .invitation_btn {
     background-color: rgb(59, 59, 59);
     color: rgb(202, 202, 202);
@@ -11,23 +10,42 @@
     color: rgb(116, 116, 116);
 }
 
-.two{
-  background-color: #1abc9c;
+.one {
+    border: 1px solid #424242;
+}
+.two {
+    border: 1px solid #424242;
 }
 
-.three{
-  background-color: #78e08f;
+.three {
+    border: 1px solid #424242;
 }
 
-.four{
-  background-color: #e55039;
+.four {
+    border: 1px solid #424242;
 }
 
-.merchant_logo{
-  height: 60px;
-  width: 60px;
+.merchant_logo {
+    height: 60px;
+    width: 60px;
 }
 
 .table tbody tr:last-child td {
-  border-bottom: none;
+    border-bottom: none;
+}
+
+/* Buy sell history */
+
+.nav .nav-item button.active {
+  background-color: transparent;
+  color: var(--bs-danger) !important;
+}
+.nav .nav-item button.active::after {
+  content: "";
+  border-bottom: 4px solid var(--bs-danger);
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  border-radius: 5px 5px 0 0;
 }
