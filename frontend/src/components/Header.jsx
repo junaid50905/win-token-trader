@@ -108,9 +108,16 @@ const Header = () => {
                                     <Link
                                         to={"/account-and-security"}
                                         className="dropdown-item"
-                                        href="#"
                                     >
                                         Account and Security
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link
+                                        to={"/wallet"}
+                                        className="dropdown-item"
+                                    >
+                                        Wallet
                                     </Link>
                                 </li>
                                 <li className="border-top">

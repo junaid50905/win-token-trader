@@ -10,8 +10,9 @@ import SignupPage from "./pages/Signup";
 import Discover from "./pages/Discover";
 import TokenDetails from "./pages/TokenDetails";
 
-import './App.css'
+import "./App.css";
 import AccountAndSecurity from "./pages/AccountAndSecurity";
+import Wallet from "./pages/Wallet";
 
 function App() {
     return (
@@ -24,7 +25,11 @@ function App() {
                         path="/discover/:id/token"
                         element={<TokenDetails />}
                     />
-                    <Route path="/account-and-security" element={<AccountAndSecurity />} />
+                    <Route
+                        path="/account-and-security"
+                        element={<AccountAndSecurity />}
+                    />
+                    <Route path="/wallet" element={<Wallet />} />
                 </Route>
                 <Route path="/login" element={<LoginPage />} />
                 <Route path="/signup" element={<SignupPage />} />
