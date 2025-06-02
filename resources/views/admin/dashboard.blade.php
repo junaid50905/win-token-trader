@@ -122,7 +122,7 @@
                             <div class="col-sm-6">
                                 <div class="d-flex align-items-center">
                                     <div class="product-img">
-                                        <img src="{{ asset('ui/admin/assets') }}/images/icons/chair.png" alt="" />
+                                        <img src="{{ asset('UI/admin/assets') }}/images/icons/chair.png" alt="" />
                                     </div>
                                     <div class="ms-2">
                                         <h6 class="mb-1">Light Blue Chair</h6>
@@ -142,7 +142,7 @@
                             <div class="col-sm-6">
                                 <div class="d-flex align-items-center">
                                     <div class="product-img">
-                                        <img src="{{ asset('ui/admin/assets') }}/images/icons/user-interface.png"
+                                        <img src="{{ asset('UI/admin/assets') }}/images/icons/user-interface.png"
                                             alt="" />
                                     </div>
                                     <div class="ms-2">
@@ -163,7 +163,7 @@
                             <div class="col-sm-6">
                                 <div class="d-flex align-items-center">
                                     <div class="product-img">
-                                        <img src="{{ asset('ui/admin/assets') }}/images/icons/watch.png" alt="" />
+                                        <img src="{{ asset('UI/admin/assets') }}/images/icons/watch.png" alt="" />
                                     </div>
                                     <div class="ms-2">
                                         <h6 class="mb-1">Hand Watch</h6>
@@ -183,7 +183,7 @@
                             <div class="col-sm-6">
                                 <div class="d-flex align-items-center">
                                     <div class="product-img">
-                                        <img src="{{ asset('ui/admin/assets') }}/images/icons/idea.png" alt="" />
+                                        <img src="{{ asset('UI/admin/assets') }}/images/icons/idea.png" alt="" />
                                     </div>
                                     <div class="ms-2">
                                         <h6 class="mb-1">Mini Laptop</h6>
@@ -203,7 +203,7 @@
                             <div class="col-sm-6">
                                 <div class="d-flex align-items-center">
                                     <div class="product-img">
-                                        <img src="{{ asset('ui/admin/assets') }}/images/icons/tshirt.png"
+                                        <img src="{{ asset('UI/admin/assets') }}/images/icons/tshirt.png"
                                             alt="" />
                                     </div>
                                     <div class="ms-2">
@@ -224,7 +224,7 @@
                             <div class="col-sm-6">
                                 <div class="d-flex align-items-center">
                                     <div class="product-img">
-                                        <img src="{{ asset('ui/admin/assets') }}/images/icons/headphones.png"
+                                        <img src="{{ asset('UI/admin/assets') }}/images/icons/headphones.png"
                                             alt="" />
                                     </div>
                                     <div class="ms-2">
@@ -245,7 +245,7 @@
                             <div class="col-sm-6">
                                 <div class="d-flex align-items-center">
                                     <div class="product-img">
-                                        <img src="{{ asset('ui/admin/assets') }}/images/icons/shoes.png" alt="" />
+                                        <img src="{{ asset('UI/admin/assets') }}/images/icons/shoes.png" alt="" />
                                     </div>
                                     <div class="ms-2">
                                         <h6 class="mb-1">Green Sports Shoes</h6>
@@ -910,7 +910,7 @@
                                 <td>
                                     <div class="d-flex align-items-center">
                                         <div class="recent-product-img">
-                                            <img src="{{ asset('ui/admin/assets') }}/images/icons/chair.png"
+                                            <img src="{{ asset('UI/admin/assets') }}/images/icons/chair.png"
                                                 alt="">
                                         </div>
                                         <div class="ms-2">
@@ -939,7 +939,7 @@
                                 <td>
                                     <div class="d-flex align-items-center">
                                         <div class="recent-product-img">
-                                            <img src="{{ asset('ui/admin/assets') }}/images/icons/shoes.png"
+                                            <img src="{{ asset('UI/admin/assets') }}/images/icons/shoes.png"
                                                 alt="">
                                         </div>
                                         <div class="ms-2">
@@ -968,7 +968,7 @@
                                 <td>
                                     <div class="d-flex align-items-center">
                                         <div class="recent-product-img">
-                                            <img src="{{ asset('ui/admin/assets') }}/images/icons/headphones.png"
+                                            <img src="{{ asset('UI/admin/assets') }}/images/icons/headphones.png"
                                                 alt="">
                                         </div>
                                         <div class="ms-2">
@@ -997,7 +997,7 @@
                                 <td>
                                     <div class="d-flex align-items-center">
                                         <div class="recent-product-img">
-                                            <img src="{{ asset('ui/admin/assets') }}/images/icons/idea.png"
+                                            <img src="{{ asset('UI/admin/assets') }}/images/icons/idea.png"
                                                 alt="">
                                         </div>
                                         <div class="ms-2">
@@ -1026,7 +1026,7 @@
                                 <td>
                                     <div class="d-flex align-items-center">
                                         <div class="recent-product-img">
-                                            <img src="{{ asset('ui/admin/assets') }}/images/icons/user-interface.png"
+                                            <img src="{{ asset('UI/admin/assets') }}/images/icons/user-interface.png"
                                                 alt="">
                                         </div>
                                         <div class="ms-2">
@@ -1055,7 +1055,7 @@
                                 <td>
                                     <div class="d-flex align-items-center">
                                         <div class="recent-product-img">
-                                            <img src="{{ asset('ui/admin/assets') }}/images/icons/watch.png"
+                                            <img src="{{ asset('UI/admin/assets') }}/images/icons/watch.png"
                                                 alt="">
                                         </div>
                                         <div class="ms-2">
@@ -1084,7 +1084,7 @@
                                 <td>
                                     <div class="d-flex align-items-center">
                                         <div class="recent-product-img">
-                                            <img src="{{ asset('ui/admin/assets') }}/images/icons/tshirt.png"
+                                            <img src="{{ asset('UI/admin/assets') }}/images/icons/tshirt.png"
                                                 alt="">
                                         </div>
                                         <div class="ms-2">
