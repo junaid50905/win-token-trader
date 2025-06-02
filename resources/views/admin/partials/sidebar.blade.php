@@ -12,7 +12,7 @@
     <!--navigation-->
     <ul class="metismenu" id="menu">
         <li>
-            <a href="{{ route('admin.dashboard') }}" aria-expanded="false">
+            <a href="{{ route('dashboard') }}" aria-expanded="false">
                 <div class="parent-icon"><i class="bx bx-cookie"></i>
                 </div>
                 <div class="menu-title">Dashboard</div>
