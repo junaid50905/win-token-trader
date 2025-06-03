@@ -41,6 +41,8 @@ const Home = () => {
                 </div>
             </section>
 
+            
+
 
             <section id="device-section">
                 <div className="container my-5">

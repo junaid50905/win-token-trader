@@ -6,7 +6,7 @@ import { SlSocialInstagram } from "react-icons/sl";
 
 const Footer = () => {
     return (
-        <footer className="bg-dark mt-5 py-2">
+        <footer className="bg-dark py-2">
             <div className="container-fluid">
                 <div className="row align-items-center">
                     <div className="col-md-8 col-sm-12 col-12">

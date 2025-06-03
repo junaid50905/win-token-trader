@@ -1,3 +1,7 @@
+section#discover {
+    background-image: linear-gradient(to right top, #0e1421, #0e1525, #0e172a, #0e182f, #0f1933, #131f3d, #162547, #1a2c52, #213966, #27477a, #2c568f, #3065a4);
+}
+
 /* Ensure full-width layout under 1120px */
 .table-wrapper {
     padding: 0 1rem;

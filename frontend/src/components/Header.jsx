@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import Logo from "../assets/logo.png";
 import "./../assets/css/Header.css";
 
@@ -95,19 +95,9 @@ const Header = () => {
                     >
                         <ul className="navbar-nav mb-2 mb-lg-0 text-center">
                             <li className="nav-item">
-                                <a className="nav-link" href="#">
-                                    Home
-                                </a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="#">
-                                    About
-                                </a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="#">
-                                    Contact
-                                </a>
+                                <NavLink to={'/discover'} className="nav-link">
+                                    Discover
+                                </NavLink>
                             </li>
                         </ul>
                     </div>

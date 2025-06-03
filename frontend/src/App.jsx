@@ -21,7 +21,7 @@ function App() {
             <Routes>
                 <Route path="/" element={<MainLayout />}>
                     <Route index element={<Home />} />
-                    {/* <Route path="/discover" element={<Discover />} /> */}
+                    <Route path="/discover" element={<Discover />} />
                     <Route
                         path="/discover/:id/token"
                         element={<TokenDetails />}
