@@ -7,7 +7,7 @@ const Header = () => {
     return (
         <>
             <nav className="navbar navbar-expand-sm navbar-light position-relative">
-                <div className="container-fluid">
+                <div className="container">
                     <button
                         className="navbar-toggler d-sm-none"
                         type="button"

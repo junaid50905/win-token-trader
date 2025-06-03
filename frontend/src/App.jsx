@@ -13,13 +13,14 @@ import TokenDetails from "./pages/TokenDetails";
 import "./App.css";
 import AccountAndSecurity from "./pages/AccountAndSecurity";
 import Wallet from "./pages/Wallet";
+import Home from "./pages/Home";
 
 function App() {
     return (
         <Router>
             <Routes>
                 <Route path="/" element={<MainLayout />}>
-                    <Route index element={<Discover />} />
+                    <Route index element={<Home />} />
                     {/* <Route path="/discover" element={<Discover />} /> */}
                     <Route
                         path="/discover/:id/token"

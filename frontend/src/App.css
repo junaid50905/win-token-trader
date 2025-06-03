@@ -1,7 +1,3 @@
-body {
-    background-color: rgb(8, 8, 8);
-}
-
 .wrapper {
     display: flex;
     flex-direction: column;
@@ -17,4 +13,41 @@ body {
 .csJWra {
     background-color: #6b8577 !important;
     border-top: none !important;
+}
+
+
+/* typography */
+
+.hero-title {
+    font-size: clamp(3rem, 5vw, 5rem);
+    font-weight: bold;
+}
+
+.section-title {
+    font-size: clamp(2rem, 3vw, 3rem);
+    font-weight: 600;
+}
+
+.medium_font {
+    font-size: clamp(0.8rem, 2vw, 1rem);
+}
+
+p.primary-text {
+    font-size: clamp(1rem, 1vw, 1.5rem);
+}
+
+h1.hero-title span {
+    background: linear-gradient(90deg, #4facfe 0%, #00f2fe 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+
+
+/* buttons */
+.try_free_btn {
+    font-size: clamp(1.2rem, 1vw, 1.5rem);
+    font-weight: 600;
 }

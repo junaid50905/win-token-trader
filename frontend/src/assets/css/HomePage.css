@@ -1,56 +1,20 @@
-
-
-.gradient-bg {
-    background: linear-gradient(135deg, #020207, #070e20, #131d53);
+section#device-section .card,
+section#how-it-works .card,
+section#trust-section .card,
+section#global-section .card {
+  background-color: #1C2437 !important;
+  border: 3px solid transparent;
 }
 
-.hero {
-    text-align: center;
-    padding: 120px 20px;
+section#device-section .card:hover {
+  border: 3px solid #259EFA;
+  color: #259EFA !important;
+  cursor: pointer;
 }
 
-.hero h1 {
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: white;
-}
 
-.hero p {
-    color: #aaa;
-}
-
-.btn-primary {
-    background-color: #3d56f0;
-    border: none;
-}
-
-.features-section,
-.rewards-section,
-.architecture-section,
-.faq-section {
-    padding: 80px 20px;
-}
-
-.section-title {
-    font-size: 1.8rem;
-    margin-bottom: 30px;
-    text-align: center;
-}
-
-.feature-card {
-    background-color: #111;
-    padding: 20px;
-    border-radius: 8px;
-    margin-bottom: 20px;
-}
-
-.faq-section .accordion-button {
-    background-color: #111;
-    color: #fff;
-}
-
-.footer {
-    text-align: center;
-    padding: 40px 20px;
-    background: #0a0a0a;
-}
+/* section#hero-section {
+  background-image: linear-gradient(to right top, #0e1421, #0e1525, #0e172a, #0e182f, #0f1933, #131f3d, #162547, #1a2c52, #213966, #27477a, #2c568f, #3065a4);
+  color: white;
+  height: 90vh;
+} */
